@@ -20,25 +20,25 @@
     </style>
 </head>
 <body>
-<div id="map"></div>
-<iframe
-        width="900"
-        height="700"
+<!--<div id="map"></div>-->
+<iframe width="600"
+        height="450"
         frameborder="0"
         style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD0Ct72n1ZxMYxcuSxVwBl_S07XECBRPAY&q=河南"
-        allowfullscreen>
+        src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyD0Ct72n1ZxMYxcuSxVwBl_S07XECBRPAY&origin=台北市政府&waypoints=台北101|國父紀念館&destination=台北小巨蛋"
+        allowfullscreen="">
 </iframe>
 <script>
     var map;
 
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: -34.397, lng: 150.644 },
-            zoom: 8,
+            // center: { lat: 37.0625, lng: -95.677068 },
+            // zoom: 8,
+            q: '开封市'
         });
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Ct72n1ZxMYxcuSxVwBl_S07XECBRPAY&callback=initMap" async defer></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Ct72n1ZxMYxcuSxVwBl_S07XECBRPAY&callback=initMap" async defer></script>-->
 </body>
 </html>
